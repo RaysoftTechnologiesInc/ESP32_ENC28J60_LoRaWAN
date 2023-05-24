@@ -9,7 +9,7 @@
 
 using namespace std;
 // WiFi settings
-const char* ssid = "RSAWEB-IoT";
+const char* ssid = "Raysoft-IoT";
 const char* password = "vs0w6g5GHkwT5Afb";
 IPAddress serverIP(192, 168, 1, 105);
 
@@ -441,25 +441,4 @@ while(1){
         delay(2000);
 
 }
-
-    
-    // if(client.available())
-    // {
-    //     client.readBytes(readHoldingRegsResponse, sizeof(readHoldingRegsResponse));
-    //     Serial.print("Reg ");
-    //     int j = 0;
-    //     for (int i = 6; i < sizeof(readHoldingRegsResponse); i++) {
-    //         // uint16_t val = (readHoldingRegsResponse[9 + i*2] << 8) | readHoldingRegsResponse[10 + i*2];
-    //         data_to_send[j] = readHoldingRegsResponse[i];
-    //         Serial.printf("%02X", readHoldingRegsResponse[i]);
-    //         Serial.print(" ");
-    //         j++;
-    //     }
-
-    //     //memset(readHoldingRegsResponse, 0, sizeof(readHoldingRegsResponse));
-    //     //
-    //     Serial.println();
-    //     //client.flush();
-    //     delay(2000);
-    // }
 }
